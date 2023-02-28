@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class ="main">
+     <div class="container"></div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        let counter = 1;
+        function addDiv(){
+            const newDiv = document.createElement('div');
+            newDiv.classList.add('box');
+            
+            container.appendChild(newDiv);
+            newDiv.addEventListener('click', () => newDiv.style.backgroundColor = 'black');
+        }
+
+        
+        for (let i = 0; i<16*16; i++)
+        {   addDiv();
+            console.log("add");
+        }
+        
+        function colorIn(){
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

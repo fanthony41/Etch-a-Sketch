@@ -1,0 +1,27 @@
+.box{
+    border-style: solid;
+    width:7px;
+    height: 7px;
+    margin:0px;
+    border:solid;
+    gap: 0;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    margin:0;
+}
+
+.main{
+    width: 320px;
+    height: 320px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
